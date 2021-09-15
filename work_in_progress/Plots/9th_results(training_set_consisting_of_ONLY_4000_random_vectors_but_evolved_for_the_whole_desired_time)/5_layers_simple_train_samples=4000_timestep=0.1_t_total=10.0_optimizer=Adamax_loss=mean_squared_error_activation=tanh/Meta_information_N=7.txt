@@ -1,0 +1,10 @@
+Type: 5 layers, simple (NOT encoder-decoder)
+Optimizer: Adamax
+Loss function: mean_squared_error
+Activation: tanh
+N: 7
+Timestep: 0.1, total evolution time: 10.0
+Size of the training set: 4000
+Size of the testing set: 1000
+Test score: 1.5808306059916504e-05
+Test accuracy: 0.8235200047492981

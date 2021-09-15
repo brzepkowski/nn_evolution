@@ -1,0 +1,21 @@
+1) Type:
+
+$ conda activate python
+
+2) Create all data necessary to train and test neural network (diagonalize Hamiltonians, generate evolution operator etc.):
+
+$ ./generate_all_data.sh N timestep t_total
+
+NOTE: "timestep" and "t_total" should be passed as floats. That is, if you want your total time to be 10 units of time, pass "10.0" as the argument to the script.
+
+3) Go into created directory:
+
+$ cd data/N=...
+
+4) Train and test neural networks via:
+
+$ python3 ../../neural_networks/evolution_via_nn_simple.py Adam logcosh tanh 2 0.1 1.0
+
+or
+
+$ ./../job_list_test.sh N timestep t_total

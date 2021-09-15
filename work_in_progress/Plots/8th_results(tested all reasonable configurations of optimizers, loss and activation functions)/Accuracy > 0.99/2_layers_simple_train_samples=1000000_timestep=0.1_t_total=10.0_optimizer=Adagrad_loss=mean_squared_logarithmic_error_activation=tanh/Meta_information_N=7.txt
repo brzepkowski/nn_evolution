@@ -1,0 +1,10 @@
+Type: 2 layers, simple (NOT encoder-decoder)
+Optimizer: Adagrad
+Loss function: mean_squared_logarithmic_error
+Activation: tanh
+N: 7
+Timestep: 0.1, total evolution time: 10.0
+Size of the training set: 1000000
+Size of the testing set: 2500
+Test score: 5.9806751245616854e-09
+Test accuracy: 0.9955999851226807

@@ -1,0 +1,10 @@
+Type: 2 layers, simple (NOT encoder-decoder)
+Optimizer: Adagrad
+Loss function: huber_loss
+Activation: linear
+N: 7
+Timestep: 0.1, total evolution time: 10.0
+Size of the training set: 1000000
+Size of the testing set: 2500
+Test score: 1.552991588438246e-10
+Test accuracy: 0.9991999864578247

@@ -1,0 +1,10 @@
+Type: 2 layers, simple (NOT encoder-decoder)
+Optimizer: Adam
+Loss function: logcosh
+Activation: tanh
+N: 7
+Timestep: 0.1, total evolution time: 10.0
+Size of the training set: 1000000
+Size of the testing set: 2500
+Test score: 1.5464425021605165e-08
+Test accuracy: 0.9900000095367432

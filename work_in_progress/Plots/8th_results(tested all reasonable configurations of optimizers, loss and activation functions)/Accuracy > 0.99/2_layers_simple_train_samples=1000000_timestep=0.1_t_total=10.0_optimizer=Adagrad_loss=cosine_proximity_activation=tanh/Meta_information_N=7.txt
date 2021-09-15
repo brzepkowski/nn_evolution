@@ -1,0 +1,10 @@
+Type: 2 layers, simple (NOT encoder-decoder)
+Optimizer: Adagrad
+Loss function: cosine_proximity
+Activation: tanh
+N: 7
+Timestep: 0.1, total evolution time: 10.0
+Size of the training set: 1000000
+Size of the testing set: 2500
+Test score: -0.9999994452476502
+Test accuracy: 0.9947999715805054

@@ -1,0 +1,38 @@
+1) Type:
+
+$ conda activate python
+
+2) Create all data necessary to train and test neural network (diagonalize Hamiltonians, generate evolution operator etc.):
+
+$ ./generate_all_data.sh N timestep t_total total_number_of_sets
+
+NOTE: "timestep" and "t_total" should be passed as floats. That is, if you want your total time to be 10 units of time, pass "10.0" as the argument to the script.
+Also, the above script will generate total_number_of_sets different files in form: training_set_0.dat, validation_set_0.dat, etc.
+
+3.1) Go into created directory:
+
+  $ cd data/N=...
+
+  4) Train and test neural networks via:
+
+  $ python3 ../../neural_networks/train.py activation N timestep t_total set_number
+
+  Note: Above procedure for set_number = 0 would train the network on training_input_0.dat, validation_input_0.dat and so on.
+
+  $ python3 ../../neural_networks/test.py activation N timestep t_total
+
+  5) Finally, you can further train the model by:
+
+  $ python3 ../../neural_networks/train.py activation N timestep t_total set_number
+
+3.2) RECOMMENDED: In the main directory launch the following script:
+
+  $ ./train_on_many_sets.sh activation N timestep t_total total_number_of_sets
+
+  Then, go to the catalog containing all training, validation and testing sets:
+
+  $ cd data/N=...
+
+  and test the network:
+
+  $ python3 ../../neural_networks/test.py activation N timestep t_total
