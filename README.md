@@ -374,14 +374,14 @@ ______
 
 For the task of compression of quatum a state and loss function minimizing the mean of $1 -  |\langle \psi | \psi' \rangle |^2 $, we got the following results:
 
-![](compression_results.png)
+![](figures/compression_results.png)
 
 In the above example **training and validation sets consisted only of linear combinations of eigenvectors, while the testing set consisted of the aforementioned eigenvectors**.
 
 ### Evolution
 
 For the task of conducting time evolution of quantum state the best obtained results are depictedin the plot below:
-![](evolution_results.png)
+![](figures/evolution_results.png)
 
 Note, that on the $y$-axis is depicted different value than in the plot included in "compression" subsection. In this case, instead of mean overlap squared $ |\langle \psi | \psi' \rangle |^2 $, the mean of $ Re(\langle \psi | \psi' \rangle)$ is shown.
 
